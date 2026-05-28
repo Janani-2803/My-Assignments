@@ -1,0 +1,20 @@
+function reverseString(str)
+{
+    let reversed=""
+    for(let i=str.length-1;i>=0;i--)
+    {
+        reversed=reversed+str[i]
+    }
+    console.log("Reversed String is "+reversed)
+    return reversed
+}
+
+function Palindrome(str)
+{
+    let result=reverseString(str)
+    if(result===str)
+        console.log("true")
+    else
+        console.log("false")
+}
+Palindrome("RADAR")
